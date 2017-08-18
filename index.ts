@@ -2,7 +2,7 @@
  * @Author: buji 
  * @Date: 2017-08-17 20:41:39 
  * @Last Modified by: buji
- * @Last Modified time: 2017-08-17 22:34:20
+ * @Last Modified time: 2017-08-18 19:46:21
  */
 
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
@@ -22,8 +22,8 @@ const weather = {
                 });
 
                 const mailOptions: SendMailOptions = {
-                    from: config.host,
-                    to: config.host,
+                    from: config.auth.user,
+                    to: config.auth.user,
                     subject: 'weather hint!!!!',
                     text: JSON.stringify(response.data)
                 }
@@ -40,3 +40,5 @@ const weather = {
         });
     }
 }
+
+export default weather;
