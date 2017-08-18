@@ -1,7 +1,7 @@
 # weather
 Query weather and notify you by sending email at 7:00 am everyday
 
-##Usage
+## Usage
 ```js
 const task = require('weather');
 task.start(
@@ -12,4 +12,4 @@ task.start(
         pass: '****'
     }
 );
-`````
+```
